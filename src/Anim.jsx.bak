@@ -1,0 +1,120 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+// import anime from 'animejs/lib/anime.es';
+import Anime from 'react-anime';
+import { ReactComponent as SvgTest } from './svgtest.svg';
+
+const testSVG = (
+    <svg width="256" height="112" viewBox="0 0 256 112">
+        <path
+            fill="none"
+            stroke="#000"
+            d="M8,56 C8,33.90861 25.90861,16 48,16 C70.09139,16 88,33.90861 88,56 C88,78.09139 105.90861,92 128,92 C150.09139,92 160,72 160,56 C160,40 148,24 128,24 C108,24 96,40 96,56 C96,72 105.90861,92 128,92 C154,93 168,78 168,56 C168,33.90861 185.90861,16 208,16 C230.09139,16 248,33.90861 248,56 C248,78.09139 230.09139,96 208,96 L48,96 C25.90861,96 8,78.09139 8,56 Z"
+        />
+    </svg>
+);
+
+class Anim extends Component {
+    // componentDidMount() {
+    //     var path2 = anime.path('path');
+
+    //     anime({
+    //         targets: 'div',
+    //         translateX: path2,
+    //         translateY: path2,
+    //         rotate: path2,
+    //         duration: 3000,
+    //         loop: true,
+    //         easing: 'linear',
+    //     });
+    // }
+
+    render() {
+        let tracker = (
+            <div
+                className="green"
+                style={{
+                    position: 'absolute',
+                    top: '.5rem',
+                    left: '.5rem',
+                    width: '1rem',
+                    height: '1rem',
+                    backgroundColor: 'green',
+                }}
+            ></div>
+        );
+        // let path=
+        return (
+            <>
+                {testSVG}
+                <Anime
+                    loop
+                    easing="easeOutElastic"
+                    duration={1000}
+                    direction="alternate"
+                    delay={(el, index) => index * 240}
+                    translateX="13rem"
+                    scale={[0.75, 0.9]}
+                >
+                    {tracker}
+                </Anime>
+            </>
+        );
+    }
+}
+
+Anim.propTypes = {};
+
+export default Anim;
+
+// import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+// import anime from 'animejs/lib/anime.es';
+// import { ReactComponent as SvgTest } from './svgtest.svg';
+
+// class Anim extends Component {
+//     componentDidMount() {
+//         var path2 = anime.path('path');
+
+//         anime({
+//             targets: 'div',
+//             translateX: path2,
+//             translateY: path2,
+//             rotate: path2,
+//             duration: 3000,
+//             loop: true,
+//             easing: 'linear',
+//         });
+//     }
+//     render() {
+//         return (
+//             <>
+//                 {/* <div className="a1 a">aa</div>
+//                 <div className="a1 b">bb</div> */}
+//                 {/* <SvgTest className="myA" /> */}
+//                 <svg width="256" height="112" viewBox="0 0 256 112">
+//                     <path
+//                         fill="none"
+//                         stroke="#000"
+//                         d="M8,56 C8,33.90861 25.90861,16 48,16 C70.09139,16 88,33.90861 88,56 C88,78.09139 105.90861,92 128,92 C150.09139,92 160,72 160,56 C160,40 148,24 128,24 C108,24 96,40 96,56 C96,72 105.90861,92 128,92 C154,93 168,78 168,56 C168,33.90861 185.90861,16 208,16 C230.09139,16 248,33.90861 248,56 C248,78.09139 230.09139,96 208,96 L48,96 C25.90861,96 8,78.09139 8,56 Z"
+//                     />
+//                 </svg>
+//                 <div
+//                     className="green"
+//                     style={{
+//                         position: 'absolute',
+//                         top: '.5rem',
+//                         left: '.5rem',
+//                         width: '1rem',
+//                         height: '1rem',
+//                         backgroundColor: 'green',
+//                     }}
+//                 ></div>
+//             </>
+//         );
+//     }
+// }
+
+// Anim.propTypes = {};
+
+// export default Anim;

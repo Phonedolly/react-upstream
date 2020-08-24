@@ -9,7 +9,13 @@ import {
     AppBar,
     Toolbar,
     IconButton,
+    Box,
 } from '@material-ui/core';
+import { Gradient } from 'react-gradient';
+import { motion } from 'framer-motion';
+import NavigationBar from './NavigationBar/NavigationBar';
+import Loader from './Loader';
+import MainAppBar from './NavigationBar/MainAppBar';
 
 // const useStyles = makeStyles({
 //     root: {
@@ -18,28 +24,22 @@ import {
 // });
 export default function App() {
     // const classes = useStyles();
+
     const [value, setValue] = React.useState(0);
+    const gradients = [
+        ['#DC2424', '#4A569D'],
+        ['#f2709c', '#ff9472'],
+    ];
     return (
-        <div>
-            <AppBar position="static">
-                <Toolbar>
-                    <IconButton edge="start">
-                        <MenuIcon />
-                    </IconButton>
-                </Toolbar>
-            </AppBar>
-            <BottomNavigation
-                value={value}
-                onChange={(event, newValue) => {
-                    setValue(newValue);
-                }}
-                showLabels
-            >
-                <BottomNavigationAction label="Recents" />
-                <BottomNavigationAction label="Favorites" />
-                <BottomNavigationAction label="Nearby" />
-            </BottomNavigation>
-        </div>
+        <>
+            <Gradient gradients={gradients} property="background" duration={10000}>
+                <div>
+                    {/* <NavigationBar /> */}
+                    <MainAppBar />
+                    <Loader />
+                </div>
+            </Gradient>
+        </>
     );
 }
 
