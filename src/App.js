@@ -9,7 +9,11 @@ import {
     AppBar,
     Toolbar,
     IconButton,
+<<<<<<< Updated upstream
     Box,
+=======
+    createMuiTheme,
+>>>>>>> Stashed changes
 } from '@material-ui/core';
 import { Gradient } from 'react-gradient';
 import { motion } from 'framer-motion';
@@ -17,11 +21,32 @@ import NavigationBar from './NavigationBar/NavigationBar';
 import Loader from './Loader';
 import MainAppBar from './NavigationBar/MainAppBar';
 
+// import globalTheme from './globalTheme';
+
 // const useStyles = makeStyles({
 //     root: {
-//         width: 500,
+//         background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+//         border: 0,
+//         borderRadius: 3,
+//         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+//         color: 'white',
+//         height: 48,
+//         padding: '0 30px',
 //     },
 // });
+
+// export const theme = createMuiTheme({
+//     overrides: {
+//         MuiCssBaseline: {
+//             '@global': {
+//                 html: {
+//                     WebkitFontSmoothing: 'false',
+//                 },
+//             },
+//         },
+//     },
+// });
+
 export default function App() {
     // const classes = useStyles();
 
