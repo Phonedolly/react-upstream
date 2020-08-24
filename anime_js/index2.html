@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CodePen - Anime.js v2.0 logo animation</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
+            integrity="sha512-X8lZKRjcVNiBSXn7PNdIncguzX4v8peKIuD9DpNQJqOmKrH4KFvYkDBYdJikYBmghypYSQ+nBlclJsACfDhaKw=="
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="stylesheet" href="./style.css" /> -->
+    </head>
+    <body>
+        <svg
+            id="aa"
+            width="98"
+            height="108"
+            viewBox="0 0 98 108"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M39.9161 51.288L37.7496 49.2128L35.7739 51.2756L37.7372 53.3501L39.9161 51.288ZM85.7081 3.47999L87.8746 5.55514L92.7358 0.479994H85.7081V3.47999ZM56.0441 3.47999V0.479994H54.7651L53.8796 1.4028L56.0441 3.47999ZM25.2281 35.592H22.2281V43.0509L27.3927 37.6692L25.2281 35.592ZM25.2281 3.47999H28.2281V0.479994H25.2281V3.47999ZM3.62813 3.47999V0.479994H0.628125V3.47999H3.62813ZM3.62813 105H0.628125V108H3.62813V105ZM25.2281 105V108H28.2281V105H25.2281ZM25.2281 67.272L27.4152 65.2185L22.2281 59.6941V67.272H25.2281ZM60.6521 105L58.4651 107.053L59.3538 108H60.6521V105ZM90.7481 105V108H97.7177L92.9271 102.938L90.7481 105ZM42.0826 53.3631L87.8746 5.55514L83.5416 1.40484L37.7496 49.2128L42.0826 53.3631ZM85.7081 0.479994H56.0441V6.47999H85.7081V0.479994ZM53.8796 1.4028L23.0636 33.5148L27.3927 37.6692L58.2087 5.55719L53.8796 1.4028ZM28.2281 35.592V3.47999H22.2281V35.592H28.2281ZM25.2281 0.479994H3.62813V6.47999H25.2281V0.479994ZM0.628125 3.47999V105H6.62813V3.47999H0.628125ZM3.62813 108H25.2281V102H3.62813V108ZM28.2281 105V67.272H22.2281V105H28.2281ZM23.0411 69.3255L58.4651 107.053L62.8392 102.947L27.4152 65.2185L23.0411 69.3255ZM60.6521 108H90.7481V102H60.6521V108ZM92.9271 102.938L42.0951 49.2259L37.7372 53.3501L88.5692 107.062L92.9271 102.938Z"
+                fill="#FF5A5A"
+            />
+        </svg>
+
+        <!-- partial -->
+        <script>
+            anime({
+                targets: '#aa path',
+                strokeDashoffset: [anime.setDashoffset, anime.setDashoffset],
+                easing: 'easeInOutSine',
+                duration: 1500,
+                delay: function (el, i) {
+                    return i * 250;
+                },
+                direction: 'alternate',
+                loop: true,
+            });
+        </script>
+    </body>
+</html>
