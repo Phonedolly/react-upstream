@@ -7469,6 +7469,11 @@ mediaelement@^4.2.9:
   dependencies:
     global "^4.3.1"
 
+memoize-one@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.1.1.tgz#047b6e3199b508eaec03504de71229b8eb1d75c0"
+  integrity sha512-HKeeBpWvqiVJD57ZUAsJNm71eHTykffzcLZVYWiVfQeI1rJtuEaS7hQiEpWfVVk18donPwJEcFKIkCmPJNOhHA==
+
 memory-fs@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/memory-fs/-/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
@@ -10177,6 +10182,11 @@ react-fast-compare@^2.0.2:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
+react-gradient@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-gradient/-/react-gradient-1.0.2.tgz#eab261cfd36b3dc3fb659c4438e12a27bea1f3bd"
+  integrity sha512-0SWuauujHh0R0Q+AaogUm/t0pAblzJVW5BYoYbJ4Kh8rCEb4EomsEK8X2QiR1UXR7iOiiqRuJZixTrKeMaFuSQ==
+
 react-helmet@^5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.1.tgz#16a7192fdd09951f8e0fe22ffccbf9bb3e591ffa"
@@ -11980,6 +11990,13 @@ ua-parser-js@^0.7.18:
   version "0.7.21"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
   integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
+
+uigradients@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/uigradients/-/uigradients-1.0.0.tgz#fa2b778b6438881baff0a521552539f7e82b1475"
+  integrity sha512-JnPpkSHt0zjNxwzYmri51QOHtEkdNgJCOK/dLTFF+WIpkgcwcKSySFwG/s/AyD7EK4cOQMvlhjZNVp6Xhn/bNw==
+  dependencies:
+    memoize-one "^5.1.1"
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
