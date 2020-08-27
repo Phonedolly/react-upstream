@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { DefaultAppFontFamily, HnAppFontFamily, AppFontFaces } from './assets/fonts/AppFonts';
 function App() {
   return (
     <div className="App">
